@@ -6,7 +6,7 @@
     "email": "arafat.hossain@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
-    "tags": ["college", "close friend"],
+    "tags": ["work"],
     "bio": "We studied CSE together and built several projects during university.",
     "goal": 14,
     "next_due_date": "2026-03-30"
@@ -18,7 +18,7 @@
     "email": "nusrat.jahan@yahoo.com",
     "days_since_contact": 10,
     "status": "almost due",
-    "tags": ["school", "good friend"],
+    "tags": ["family"],
     "bio": "School friend who now works in a bank. We catch up occasionally.",
     "goal": 14,
     "next_due_date": "2026-04-20"
@@ -30,7 +30,7 @@
     "email": "rakib.hasan@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["gym", "fitness buddy"],
+    "tags": ["work"],
     "bio": "Met at the gym. We train together and share workout tips.",
     "goal": 10,
     "next_due_date": "2026-04-20"
@@ -42,7 +42,7 @@
     "email": "farzana.akter@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["office", "colleague"],
+    "tags": ["hobby", "travel"],
     "bio": "Former colleague from my internship. Great at UI/UX design.",
     "goal": 14,
     "next_due_date": "2026-04-01"
@@ -54,7 +54,7 @@
     "email": "tanvir.ahmed@hotmail.com",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["business", "partner"],
+    "tags": ["work"],
     "bio": "We planned an online business together and still share ideas.",
     "goal": 14,
     "next_due_date": "2026-04-18"
@@ -66,7 +66,7 @@
     "email": "mim.rahman@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["university", "study group"],
+    "tags": ["family"],
     "bio": "Worked together on assignments and group study sessions.",
     "goal": 7,
     "next_due_date": "2026-04-19"
@@ -78,7 +78,7 @@
     "email": "sabbir.chy@gmail.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": ["childhood", "close friend"],
+    "tags": ["work"],
     "bio": "Childhood friend from my hometown. We used to play cricket daily.",
     "goal": 15,
     "next_due_date": "2026-03-28"
@@ -90,7 +90,7 @@
     "email": "israt.karim@gmail.com",
     "days_since_contact": 8,
     "status": "on-track",
-    "tags": ["online", "developer"],
+    "tags": ["hobby", "travel"],
     "bio": "Met through a developer community. We discuss tech trends.",
     "goal": 14,
     "next_due_date": "2026-04-21"
@@ -102,7 +102,7 @@
     "email": "mahmudul.hasan@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["freelance", "client"],
+    "tags": ["work"],
     "bio": "Former freelance client who became a good professional contact.",
     "goal": 14,
     "next_due_date": "2026-04-17"
@@ -114,7 +114,7 @@
     "email": "sharmin.sultana@gmail.com",
     "days_since_contact": 6,
     "status": "on-track",
-    "tags": ["neighbor", "family friend"],
+    "tags": ["family"],
     "bio": "Neighbor and family friend. We meet during local events.",
     "goal": 10,
     "next_due_date": "2026-04-20"
@@ -126,7 +126,7 @@
     "email": "fahim.rahman@gmail.com",
     "days_since_contact": 16,
     "status": "overdue",
-    "tags": ["startup", "co-founder"],
+    "tags": ["work"],
     "bio": "We tried launching a startup together. Still share business ideas.",
     "goal": 14,
     "next_due_date": "2026-04-02"
@@ -138,7 +138,7 @@
     "email": "jannatul.ferdous@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["course", "learning partner"],
+    "tags": ["hobby", "travel"],
     "bio": "We took an online course together and still motivate each other.",
     "goal": 14,
     "next_due_date": "2026-04-19"
