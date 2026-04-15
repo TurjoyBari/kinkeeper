@@ -8,6 +8,7 @@ import HomePage from './pages/homepage/HomePage'
 import TimeLinePage from './pages/timelinepage/TimeLinePage'
 import StatsPage from './pages/statspage/StatsPage'
 import ErrorPage from './pages/errorpage/ErrorPage'
+import FriendDetails from './pages/FriendDetails/FriendDetails'
 
 
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <HomePage/>
+      },
+      {
+        path:"/:id",
+        element: <FriendDetails/>
       },
       {
         path:"/timeline",
