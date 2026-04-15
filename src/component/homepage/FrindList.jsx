@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { HashLoader } from "react-spinners";
 import useFriend from "../../hooks/useFriend";
+import { Link } from "react-router";
 
 const FrindList = () => {
-  const {friends, loading} = useFriend()
+  const { friends, loading } = useFriend();
 
   const statusClass = {
     "almost due": "badge-warning",
-    "overdue": "badge-error",
+    overdue: "badge-error",
     "on-track": "badge-success",
   };
-
-  
 
   return (
     <div className=" bg-base-100 max-w-7xl mx-auto pt-10 pb-10">
@@ -20,14 +19,14 @@ const FrindList = () => {
       </div>
 
       {loading ? (
-        <div className="flex justify-center items-center">
-          <HashLoader color="#244D3F" />
+        <div className="w-full h-fit flex justify-center items-center">
+          <HashLoader color="#244D3F" size={60} />
         </div>
       ) : (
         <div className="grid lg:grid-cols-3 gap-3 justify-center">
           {friends.map((friend) => {
             return (
-              <div className="card bg-base-100 w-96 shadow-sm text-center">
+              <Link to={`/${friend.id}`} className="card bg-base-100 w-96 shadow-sm text-center">
                 <figure>
                   <img
                     className="rounded-full size-25"
@@ -58,7 +57,7 @@ const FrindList = () => {
                     )}
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
