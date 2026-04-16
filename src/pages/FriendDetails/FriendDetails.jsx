@@ -51,9 +51,9 @@ const FriendDetails = () => {
     <div>
       <div className="p-6 bg-base-200 ">
         <div className="max-w-7xl mx-auto pt-10 pb-10 ">
-          <div className="grid grid-cols-4 gap-4">
-            {/* LEFT PROFILE CARD */}
-            <div className="col-span-1 space-y-3">
+          <div className="grid md:grid-cols-4 gap-4">
+            
+            <div className="col-span-1 space-y-3 ">
               <div className="card bg-base-100 shadow p-4 text-center">
                 <div className="avatar mx-auto mb-2">
                   <div className="w-16 rounded-full">
@@ -61,26 +61,37 @@ const FriendDetails = () => {
                   </div>
                 </div>
 
-                <h2 className="font-semibold">{expectedFriend?.name}</h2>
+                <h2 className="font-semibold pb-3">{expectedFriend?.name}</h2>
 
-                <div className="flex justify-center gap-2 my-2">
-                  <div
-                    className={`badge ${statusClass[expectedFriend?.status]}`}
-                  >
-                    {expectedFriend?.status}
-                  </div>
-                  <div className="badge badge-success">FAMILY</div>
+                <div className="pb-3">
+                    <div className="badge badge-soft badge-success text-[12px] font-medium bg-[#CBFADB] rounded-full text-[#244D3F]">
+                      {expectedFriend.tags[0]}
+                    </div>
+                    {expectedFriend.tags?.[1] && expectedFriend.tags[1].length > 0 ? (
+                      <span className="badge badge-soft badge-success text-[12px] font-medium bg-[#CBFADB] rounded-full text-[#244D3F]">
+                        {expectedFriend.tags[1]}
+                      </span>
+                    ) : null}
+                </div>
+                <div className="pb-3">
+                    {statusClass[expectedFriend.status] && (
+                      <div
+                        className={`badge ${statusClass[expectedFriend.status]} rounded-full capitalize text-[12px] font-medium text-white`}
+                      >
+                        {expectedFriend.status}
+                      </div>
+                    )}
                 </div>
 
                 <p className="text-sm italic text-gray-500">
                   "{expectedFriend?.bio}"
                 </p>
                 <p className="text-xs text-gray-400 mt-1">
-                  {/* Preferred: {expectedFriend.preferred} */}
+                  
                 </p>
               </div>
 
-              {/* ACTION BUTTONS */}
+              
               <button className="btn w-full justify-start gap-2">
                 <IoAlarmOutline /> Snooze 2 Weeks
               </button>
@@ -94,10 +105,10 @@ const FriendDetails = () => {
               </button>
             </div>
 
-            {/* RIGHT CONTENT */}
+            
             <div className="col-span-3 space-y-4">
               {/* TOP STATS */}
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-3 gap-4">
                 <div className="card bg-base-100 shadow p-4 text-center">
                   <h2 className="text-2xl font-bold">
                     {expectedFriend?.days_since_contact}
@@ -118,7 +129,7 @@ const FriendDetails = () => {
                 </div>
               </div>
 
-              {/* RELATIONSHIP GOAL */}
+            
               <div className="card bg-base-100 shadow p-4 flex justify-between items-center">
                 <div>
                   <h3 className="font-semibold">Relationship Goal</h3>
@@ -129,7 +140,7 @@ const FriendDetails = () => {
                 <button className="btn btn-sm">Edit</button>
               </div>
 
-              {/* QUICK CHECK-IN */}
+              
               <div className="card bg-base-100 shadow p-4">
                 <h3 className="font-semibold mb-3">Quick Check-In</h3>
 
