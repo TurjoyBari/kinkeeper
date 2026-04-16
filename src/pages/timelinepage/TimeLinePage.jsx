@@ -2,6 +2,7 @@ import React, { useContext , useState } from "react";
 import TimelineDataProvider from "../../context/TimelineDataProvider";
 import { TimelineDataContext } from "../../context/TimelineDataContext";
 import { FaHandshake, FaPhoneAlt, FaSms, FaVideo } from "react-icons/fa";
+import EmptyState from "../errorpage/EmptyState";
 
 const TimeLinePage = () => {
   const { timelineData, setTimelineData } = useContext(TimelineDataContext);
@@ -28,10 +29,10 @@ const TimeLinePage = () => {
 
   return (
     <div className="max-w-7xl mx-auto pt-10 pb-10">
-      {/* Title */}
+      
       <h1 className="text-3xl font-bold mb-4">Timeline</h1>
 
-      {/* Filter */}
+      
       <div className="mb-4">
         <select
           className="select select-bordered w-64"
@@ -46,7 +47,9 @@ const TimeLinePage = () => {
 
       
 
-      {filteredData.map((item) => (
+      {filteredData.length === 0 ? (
+        <EmptyState filter={filter} />
+      ) :filteredData.map((item) => (
         <div key={item.id}  className="pb-6">
           <div className="card bg-base-100 shadow p-4 flex gap-3">
             <div className="text-2xl">{getIcon(item.type)}</div>
