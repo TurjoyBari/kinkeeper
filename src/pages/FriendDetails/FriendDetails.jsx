@@ -8,6 +8,7 @@ import { MdDelete } from "react-icons/md";
 import { IoAlarmOutline } from "react-icons/io5";
 import { HashLoader } from "react-spinners";
 import { TimelineDataContext } from "../../context/TimelineDataContext";
+import { toast } from "react-toastify";
 
 const FriendDetails = () => {
   const { id } = useParams();
@@ -43,6 +44,14 @@ const FriendDetails = () => {
   };
 
   setTimelineData([...timelineData, newItem]);
+  
+  if (type === "call") {
+    toast.success(`Call with ${expectedFriend.name}`);
+  } else if (type === "text") {
+    toast.success(`Text with ${expectedFriend.name}`);
+  } else if (type === "video") {
+    toast.success(`Video call with ${expectedFriend.name}`);
+  }
 };
 
   console.log(timelineData, "context");
@@ -85,6 +94,9 @@ const FriendDetails = () => {
 
                 <p className="text-sm italic text-gray-500">
                   "{expectedFriend?.bio}"
+                </p>
+                <p className="text-sm text-black pt-2">
+                  {expectedFriend?.email}
                 </p>
                 <p className="text-xs text-gray-400 mt-1">
                   
@@ -147,7 +159,7 @@ const FriendDetails = () => {
                 <div className="grid grid-cols-3 gap-4">
                   <button
                     className="btn flex flex-col gap-2 h-20"
-                    onClick={() => handleTimelineData("call")}
+                    onClick={() => handleTimelineData("call") }
                   >
                     <FaPhoneAlt size={18} />
                     Call

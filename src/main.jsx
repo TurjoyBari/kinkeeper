@@ -10,6 +10,7 @@ import StatsPage from "./pages/statspage/StatsPage";
 import ErrorPage from "./pages/errorpage/ErrorPage";
 import FriendDetails from "./pages/FriendDetails/FriendDetails";
 import TimelineDataProvider from "./context/TimelineDataProvider";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
