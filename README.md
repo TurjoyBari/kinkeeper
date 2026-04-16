@@ -36,6 +36,10 @@ Get insights into your communication patterns using dynamic pie charts.
 
 ## 📷 Screenshots
 <img width="1796" height="906" alt="image" src="https://github.com/user-attachments/assets/a82030c2-38e0-42fd-9f54-72814d285248" />
+<img width="1731" height="615" alt="image" src="https://github.com/user-attachments/assets/dbdccad9-e240-4c11-b1a6-49f6cfa11b4a" />
+<img width="1730" height="878" alt="image" src="https://github.com/user-attachments/assets/f479e600-7376-48f5-b1bc-51ecf255a69f" />
+
+
 
 
 
