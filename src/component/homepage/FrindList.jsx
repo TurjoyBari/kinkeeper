@@ -35,8 +35,8 @@ const FrindList = () => {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="">{friend.name}</h2>
-                  <p>{friend.days_since_contact}</p>
+                  <h2 className="text-[20px] font-semibold pb-3">{friend.name}</h2>
+                  <p className="text-sm text-gray-500">{friend.days_since_contact}</p>
                   <div className="flex gap-3 justify-center uppercase ">
                     <div className="badge badge-soft badge-success text-[12px] font-medium bg-[#CBFADB] rounded-full text-[#244D3F]">
                       {friend.tags[0]}
