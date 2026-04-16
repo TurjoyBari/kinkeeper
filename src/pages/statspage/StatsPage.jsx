@@ -32,7 +32,7 @@ const StatsPage = () => {
     <div className=" my-10 shadow p-10 rounded-md border border-slate-300 container mx-auto">
       
       <h2 className="font-semibold text-3xl mb-10 text-center">
-        Timeline Statistics
+        Friendship Analytics
       </h2>
 
   

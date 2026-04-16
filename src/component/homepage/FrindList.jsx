@@ -26,7 +26,7 @@ const FrindList = () => {
         <div className="grid lg:grid-cols-3 gap-3 justify-center">
           {friends.map((friend) => {
             return (
-              <Link to={`/${friend.id}`} className="card bg-base-100 w-96 shadow-sm text-center">
+              <Link to={`/${friend.id}`} className="card bg-base-100 w-96 shadow-sm text-center p-5">
                 <figure>
                   <img
                     className="rounded-full size-25"
